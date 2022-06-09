@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<title>Image Identification App</title>
+ <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>    
+</head>
+    <body>
+        <center>
+            <h1>Image Identification App</h1>
+            <br>
+            <p>Model is trained to identify the following objects</p>
+            <b>
+               Mini Notebook
+                <br>
+                <hr>
+                Rubber
+                <br>
+                <hr>
+                Pencil
+                <br>
+                <hr>
+                Scissors
+                <br>
+                <hr>
+                Sharpener
+                <br>
+                <hr>
+                Toy Hammer
+                <br>
+                <hr>
+                Pencilcase
+                <br>
+                <hr>
+                Mini clock
+                <br>
+                <hr>
+                Tissue Box
+                <br>
+                <hr>
+                Paper
+                <br>
+                <hr>
+            </b>
+            <label>Webcam View</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button id="Capture" onclick="take_snapshot()">Capture Image</button>
+        <br>
+        <button id="Identify" onclick="check()">Identify Image</button>
+        <br>
+        <h3>object-<span id="object_name"></span></h3>
+        <br>
+        <h3>accuracy-<span id="accuracy_name"></span></h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

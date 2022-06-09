@@ -1,0 +1,20 @@
+body{
+    background-image:url("https://images.fineartamerica.com/images-medium-large-5/2-abstract-background-joex93.jpg");
+    background-size: cover;
+    color:rgb(189, 158, 85);
+}
+h1{
+   font-style:italic;
+}
+button{
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(114, 96, 63);
+}
+#result,#camera{
+    border: ridge;
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+}
